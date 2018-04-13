@@ -80,23 +80,6 @@ public class User implements Comparable<User>{
     @Override
     public int compareTo(User u)
     {
-        int returnCode = 0;
-        
-        if(this.name.compareTo(u.getName()) > 0)
-        {
-            returnCode = 1;
-        }
-        
-        if(this.name.compareTo(u.getName()) < 0)
-        {
-            returnCode = -1;
-        }
-        
-        if(this.name.compareTo(u.getName()) == 0)
-        {
-            returnCode = 0;
-        }
-        
-        return returnCode;
+        return this.name.compareTo(u.getName());
     }
 }
