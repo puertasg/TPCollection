@@ -14,10 +14,14 @@ import java.util.ArrayList;
 public class TPCollections {
 
     /**
-     * @param args the command line arguments
+     * 
+     * @param args 
+     * TP sur les collections d'objets, instancier un objet et l'ajouter à une collection
      */
     public static void main(String[] args) {
         ArrayList<User> users = new ArrayList();
+        
+        //Génère 10 user et les insère dans users
         for(int i = 0; i < 10; i++)
         {
             User u = new User();
