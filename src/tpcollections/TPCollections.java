@@ -18,8 +18,11 @@ public class TPCollections {
      */
     public static void main(String[] args) {
         ArrayList<User> users = new ArrayList();
-        User u = new User();
-        users.add(u);
+        for(int i = 0; i < 10; i++)
+        {
+            User u = new User();
+            users.add(u);
+        }
     }
     
 }
