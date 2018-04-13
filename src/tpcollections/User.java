@@ -54,7 +54,17 @@ public class User implements Comparable<User>{
     @Override
     public String toString()
     {
-        return "Nom : " + this.name + " Age : " + this.age + " est un homme : " + this.isMale;
+        String genre;
+        if(this.isMale == true)
+        {
+            genre = "masculin";
+        }
+        else
+        {
+            genre = "féminin";
+        }
+        
+        return "Nom : " + this.name + " Age : " + this.age + " Genre : " + genre;
     }
     
     /**
