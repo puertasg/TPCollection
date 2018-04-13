@@ -7,6 +7,7 @@ package tpcollections;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 
 /**
  *
@@ -30,7 +31,7 @@ public class TPCollections {
         users.add(u2);
         User u3 = new User("C",0,true);
         users.add(u3);
-        User u4 = new User("K",0,true);
+        User u4 = new User("H",0,true);
         users.add(u4);
         User u5 = new User("B",0,true);
         users.add(u5);
@@ -48,13 +49,16 @@ public class TPCollections {
         Collections.sort(users);
         
         printUsers(users);
+        
+        users.remove(0);
     }
     
     public static void printUsers(ArrayList<User> l)
     {
-        for(int i = 0; i < l.size(); i++)
+        Iterator i = l.iterator();
+        while(i.hasNext())
         {
-            System.out.println(l.get(i));
+            System.out.println(i.next());
         }
     }
 }
