@@ -64,26 +64,24 @@ public class User implements Comparable<User>{
      * compareTo retourne un nombre négatif entier, 0 ou un entier positif si 
      * l'objet actuel est plus plus petit, égal ou supérieur à celui passé en 
      * paramètre.
-     * La comparaison s'effectue sur la première lettre du nom, passée en minuscule en utilisant son code ASCII
+     * La comparaison s'effectue sur la valeur name des objets
      */
     @Override
     public int compareTo(User u)
     {
         int returnCode = 0;
-        int asciinom = (int) this.name.toLowerCase().charAt(0);
-        int asciiu = (int) u.getName().toLowerCase().charAt(0);
         
-        if(asciinom > asciiu)
+        if(this.name.compareTo(u.getName()) > 0)
         {
             returnCode = 1;
         }
         
-        if(asciinom < asciiu)
+        if(this.name.compareTo(u.getName()) < 0)
         {
             returnCode = -1;
         }
         
-        if(asciinom == asciiu)
+        if(this.name.compareTo(u.getName()) == 0)
         {
             returnCode = 0;
         }
