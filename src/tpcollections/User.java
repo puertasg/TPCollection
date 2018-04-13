@@ -48,4 +48,9 @@ public class User {
     public boolean isIsMale() {
         return isMale;
     }
+    
+    public String toString()
+    {
+        return "Nom : " + this.name + " Age : " + this.age + " est un homme : " + this.isMale;
+    }
 }
