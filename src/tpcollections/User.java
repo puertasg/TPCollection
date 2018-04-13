@@ -57,6 +57,15 @@ public class User implements Comparable<User>{
         return "Nom : " + this.name + " Age : " + this.age + " est un homme : " + this.isMale;
     }
     
+    /**
+     * 
+     * @param u, Objet de type User
+     * @return returnCode, 
+     * compareTo retourne un nombre négatif entier, 0 ou un entier positif si 
+     * l'objet actuel est plus plus petit, égal ou supérieur à celui passé en 
+     * paramètre.
+     * La comparaison s'effectue sur la première lettre du nom, passée en minuscule en utilisant son code ASCII
+     */
     @Override
     public int compareTo(User u)
     {
