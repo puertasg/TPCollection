@@ -70,7 +70,7 @@ public class User implements Comparable<User>{
     /**
      * 
      * @param u, Objet de type User
-     * @return returnCode, 
+     * @return Résultat de la comparaison
      * compareTo retourne un nombre négatif entier, 0 ou un entier positif si 
      * l'objet actuel est plus plus petit, égal ou supérieur à celui passé en 
      * paramètre.
