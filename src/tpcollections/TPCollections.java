@@ -44,13 +44,18 @@ public class TPCollections {
         User u9 = new User("J",0,true);
         users.add(u9);
         
-        printUsers(users);
-        
         Collections.sort(users);
+        users.remove(0);
+        
+        ArrayList<User> users2 = new ArrayList();
+        User monUser = new User("Un", 0, false);
+        users2.add(monUser);
+        users2.add(monUser);
+        users2.add(monUser);
+        
+        users.addAll(users2);
         
         printUsers(users);
-        
-        users.remove(0);
     }
     
     public static void printUsers(ArrayList<User> l)
