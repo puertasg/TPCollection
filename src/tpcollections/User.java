@@ -5,11 +5,13 @@
  */
 package tpcollections;
 
+import java.util.Comparator;
+
 /**
  *
  * @author diginamic05
  */
-public class User {
+public class User implements Comparable<User>{
     private String name;
     private Integer age;
     private boolean isMale;
@@ -49,8 +51,34 @@ public class User {
         return isMale;
     }
     
+    @Override
     public String toString()
     {
         return "Nom : " + this.name + " Age : " + this.age + " est un homme : " + this.isMale;
+    }
+    
+    @Override
+    public int compareTo(User u)
+    {
+        int returnCode = 0;
+        int asciinom = (int) this.name.toLowerCase().charAt(0);
+        int asciiu = (int) u.getName().toLowerCase().charAt(0);
+        
+        if(asciinom > asciiu)
+        {
+            returnCode = 1;
+        }
+        
+        if(asciinom < asciiu)
+        {
+            returnCode = -1;
+        }
+        
+        if(asciinom == asciiu)
+        {
+            returnCode = 0;
+        }
+        
+        return returnCode;
     }
 }
