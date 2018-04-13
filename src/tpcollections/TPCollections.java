@@ -24,9 +24,10 @@ public class TPCollections {
             users.add(u);
         }
         
+        printUsers(users);
     }
     
-    public void printUsers(ArrayList<User> l)
+    public static void printUsers(ArrayList<User> l)
     {
         for(int i = 0; i < l.size(); i++)
         {
