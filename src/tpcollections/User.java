@@ -74,7 +74,8 @@ public class User implements Comparable<User>{
      * compareTo retourne un nombre négatif entier, 0 ou un entier positif si 
      * l'objet actuel est plus plus petit, égal ou supérieur à celui passé en 
      * paramètre.
-     * La comparaison s'effectue sur la valeur name des objets
+     * La comparaison s'effectue sur la valeur lexicographique de l'attribut 
+     * name des objets (ordre alphabétique)
      */
     @Override
     public int compareTo(User u)
