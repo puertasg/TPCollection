@@ -23,6 +23,14 @@ public class TPCollections {
             User u = new User();
             users.add(u);
         }
+        
     }
     
+    public void printUsers(ArrayList<User> l)
+    {
+        for(int i = 0; i < l.size(); i++)
+        {
+            System.out.println("Nom : " + l.get(i).getName() + " Age : " + l.get(i).getName() + " est un homme : " + l.get(i).isIsMale());
+        }
+    }
 }
